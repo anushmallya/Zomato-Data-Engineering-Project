@@ -1,0 +1,65 @@
+version: 2
+
+models:
+    - name: silver_restaurant
+      columns:
+        - name: restaurant_id
+          data_tests:
+            - unique 
+            - not_null
+
+    - name: silver_food
+      columns:
+        - name: food_id
+          data_tests:
+            - unique 
+            - not_null
+
+    - name: silver_menu
+      columns:
+        - name: restaurant_id
+          data_tests:
+            - not_null
+
+        - name: menu_id
+          data_tests:
+            - not_null
+
+        - name: food_id
+          data_tests:
+            - not_null
+        
+        - name: price
+          data_tests:
+            - not_null:
+                config:
+                  where: "price > 0"
+
+
+    - name: silver_order_items
+      columns:
+        - name: order_item_id
+          data_tests:
+            - unique 
+            - not_null
+
+    - name: silver_orders
+      columns:
+        - name: order_id
+          data_tests:
+            - unique 
+            - not_null
+
+    - name: silver_reviews
+      columns:
+        - name: review_id
+          data_tests:
+            - unique 
+            - not_null
+
+    - name: silver_users
+      columns:
+        - name: customer_id
+          data_tests:
+            - unique 
+            - not_null

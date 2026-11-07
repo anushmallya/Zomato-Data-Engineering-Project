@@ -1,0 +1,30 @@
+snapshots:
+    - name: snap_dim_restaurant
+      relation: ref('restaurant')
+      config:
+        schema: snap_gold
+        database: zomato_dep
+        unique_key: restaurant_id
+        strategy: timestamp
+        updated_at: restaurant_updated_datetime
+        dbt_valid_to_current: "NULL"
+
+    - name: snap_dim_customers
+      relation: ref('customers')
+      config:
+        schema: snap_gold
+        database: zomato_dep
+        unique_key: customer_id
+        strategy: timestamp
+        updated_at: customer_updated_datetime
+        dbt_valid_to_current: "NULL"
+
+    - name: snap_dim_food
+      relation: ref('food')
+      config:
+        schema: snap_gold
+        database: zomato_dep
+        unique_key: food_id
+        strategy: timestamp
+        updated_at: food_updated_datetime
+        dbt_valid_to_current: "NULL"

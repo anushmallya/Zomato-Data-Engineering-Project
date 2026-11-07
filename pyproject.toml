@@ -8,8 +8,10 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "apache-airflow>=3.3.2",
     "dbt-core>=1.12.5",
     "dbt-databricks>=1.12.8",
+    "sqlfmt>=0.0.3",
 ]
 
 [project.scripts]

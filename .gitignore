@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+.env
+
+# Airflow
+Zomato_Airflow/.env
+Zomato_Airflow/logs/

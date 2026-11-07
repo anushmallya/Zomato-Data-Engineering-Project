@@ -5,10 +5,16 @@ build/
 dist/
 wheels/
 *.egg-info
+logs/
+src/
+.python-version
+README.md
+uv.lock
 
 # Virtual environments
 .venv
 .env
+.vscode
 
 # Airflow
 Zomato_Airflow/.env

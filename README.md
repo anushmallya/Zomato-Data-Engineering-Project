@@ -1,7 +1,4 @@
 # Zomato_Data_Engineering_Project
-
-Building an end-to-end data engineering pipeline using Zomato datasets to perform data ingestion, transformation, incremental processing, and dimensional modelling, producing structured data for analytics.
-
 ## 🚀 Project Overview
 
 The project implements an end-to-end data pipeline using **Databricks, dbt, Python, Apache Airflow, and Docker** to process Zomato data across multiple stages.
